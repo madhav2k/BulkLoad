@@ -18,16 +18,10 @@ public class BulkLoadCassandraWithCSV {
 
     public static void main(String[] args) throws IOException {
 
-//        if (args.length < 3)
-//        {
-//            System.out.println("Expecting 3 arguments - <keyspace>, <column>, <csv_file>");
-//            System.exit(1);
-//        }
-
         long start = System.currentTimeMillis();
 
         String keyspace = "cms_desynpuf";
-        String col = "outpatient_claims";
+        String col = "beneficiary";
         filename = "Beneficiary_Summary_File_Sample.csv";
 
         BufferedReader reader = new BufferedReader(new FileReader(filename));
